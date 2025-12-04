@@ -112,14 +112,13 @@ func apply_knockback(direction: Vector2, force: float) -> void:
 func die() -> void:
 	# Disable collisions
 	$CollisionShape2D.disabled = true
-	zombie_dying.play()
+	
 	is_dead = true
-	
-	
 	if has_node("AttackRange"):
 		$AttackRange/CollisionShape2D.disabled = true
 	
 	sprite.play(zombie_type + "_death")
+	zombie_dying.play()
 	await sprite.animation_finished
 	
 	var ui: Node = get_node("/root/Main/UI")

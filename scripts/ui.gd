@@ -21,6 +21,7 @@ func update_health(health: int) -> void:
 	var health_text: String = "❤️ "
 	
 	for i in range(10):
+		@warning_ignore("integer_division")
 		if i < health / 10:
 			health_text += "♥"
 		else:

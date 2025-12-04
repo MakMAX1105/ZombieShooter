@@ -26,7 +26,7 @@ func spawn_zombie() -> void:
 	if players.size() > 0:
 		var player: Node = players[0]
 		var angle: float = randf() * TAU
-		var distance: int = 600
+		var distance: int = 700
 		zombie.position = player.position + Vector2(cos(angle), sin(angle)) * distance
 	
 	get_parent().add_child(zombie)

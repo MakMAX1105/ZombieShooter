@@ -17,8 +17,8 @@ var fire_timer: float = 0.0
 # Reload times
 var reload_times: Dictionary = {
 	"pistol": 3,
-	"shotgun": 5,
-	"rifle": 4
+	"shotgun": 3,
+	"rifle": 3
 }
 
 # Weapon stats

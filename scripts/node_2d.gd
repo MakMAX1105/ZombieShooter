@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var zombie_dialog: AudioStreamPlayer = $"../ZombieDialog"
+@onready var fast_zombie_dia: AudioStreamPlayer = $"../FastZombieDia"
 
 
 func _ready() -> void:
@@ -10,3 +11,5 @@ func _ready() -> void:
 
 func _on_timer_timeout() -> void:
 	zombie_dialog.play()
+	
+	

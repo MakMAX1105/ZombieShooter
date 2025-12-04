@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://dmymtyeym1n5g"]
+[gd_scene load_steps=17 format=4 uid="uid://dmymtyeym1n5g"]
 
 [ext_resource type="PackedScene" uid="uid://ds2xhwyqp3awj" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://csasfx0g48qi2" path="res://scripts/spawner.gd" id="2_0wfyh"]
@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://dpwi38fpg4nr6" path="res://assets/sounds/zombie-dialog.mp3" id="4_jyhfs"]
 [ext_resource type="Script" uid="uid://cjqlvfocfkk25" path="res://scripts/node_2d.gd" id="4_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://3soql2y08iif" path="res://assets/environment/tile_city.png" id="6_tefeu"]
+[ext_resource type="AudioStream" uid="uid://dg4aipxtdqtjq" path="res://assets/sounds/fast_zombie_dia.mp3" id="6_tipki"]
 [ext_resource type="Texture2D" uid="uid://chj34vm85ec8m" path="res://assets/environment/tilemap_packed.png" id="7_o6xl0"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_tbgi4"]
@@ -1240,6 +1241,9 @@ autostart = true
 [node name="ZombieDialog" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_jyhfs")
 volume_db = 2.862
+
+[node name="FastZombieDia" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_tipki")
 
 [node name="Tiles" type="Node2D" parent="."]
 position = Vector2(-40, -23)

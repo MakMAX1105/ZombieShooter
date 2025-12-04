@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3v118hcpn7dp"]
+
+[ext_resource type="Texture2D" uid="uid://kkgte8mvcn31" path="res://assets/Weapons/Ak47.png" id="1_6kub0"]
+
+[node name="Rifle" type="Node2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(9, 0)
+scale = Vector2(0.46875, 0.46875)
+texture = ExtResource("1_6kub0")
+
+[node name="BulletSpawn" type="Marker2D" parent="."]
+position = Vector2(28, -3)

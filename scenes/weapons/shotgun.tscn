@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dedok5uhbf7f"]
+
+[ext_resource type="Texture2D" uid="uid://dqngu45g7ntqq" path="res://assets/Weapons/Shotgun.png" id="1_lbead"]
+
+[node name="Shotgun" type="Node2D"]
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(14.999999, 0.99999994)
+scale = Vector2(0.8, 1.029)
+texture = ExtResource("1_lbead")
+
+[node name="BulletSpawn" type="Marker2D" parent="."]
+position = Vector2(35, -5)
